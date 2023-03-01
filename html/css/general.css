@@ -1,0 +1,92 @@
+@font-face {
+	font-family: 'MultiRound'; 
+	src: url(./fonts/Multiround.woff); 
+}
+
+html, body{
+	background-color: #FD974F;
+	size: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+#header {
+	display: flex;
+	background-color: #FEF2E4;
+	border-radius: 15px;
+
+	justify-content: space-around;
+	align-items: center;
+	margin: 8px;
+}
+
+#h-logo {
+	text-decoration: none;
+	color: #C60000;
+	font-size: 45px;
+}
+
+.h-icon {
+	width: 40px;
+	padding-right: 5px;
+}
+
+
+#blocks {
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 0px;
+	padding: 0px;
+}
+
+.block {
+	margin:0;
+	background-color: #FFDFBA;
+	padding: 5px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.b-header {
+	color: #805A3B;
+	font-family: 'MultiRound';
+	margin-bottom: 10px;
+}
+
+.b-text {
+	color: #805A3B;
+	font-family: 'Cantarell';
+	font-weight: 600;
+	margin-top: 0;
+}
+
+
+#programm {
+	border: 3px solid #6B4321;
+	border-radius: 5px;
+
+	font-family: 'Cantarell';
+	font-size: 15px;
+	font-weight: 500;
+	background-color: #B59070;
+	float: right;
+	color: #FFFFFF;
+}
+
+.b-left {
+	border-radius: 0px 15px 15px 0px;
+	margin-right: 20px;
+	align-items: flex-start;
+	padding-left: 10px; 
+	text-align: left;
+}
+
+.b-right {
+	border-radius: 15px 0px 0px 15px;
+	margin-left: 20px;
+	align-items: flex-end;
+	padding-right: 10px;
+	text-align: right;
+}
