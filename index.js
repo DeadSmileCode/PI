@@ -2,8 +2,14 @@ const express = require("express");
 
 const app = express();
 
-app.get("/", function(request, response){
+app.use(express.static(__dirname + "/html"));
 
+app.get("/", function(req, res){
+	res.sendFile(__dirname + "/html/home.html");
 }
 
-app.listen(3000);
+app.get("/home", function(req, res){
+	res.sendFile(__dirname + "/html/home.html");
+}
+
+app.listen(80);
